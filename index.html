@@ -1,199 +1,242 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Алексей Миронов — Веб-дизайнер</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header>
-    <div class="container header-flex">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-flex">
         <h1 class="logo">Alex Mironov</h1>
-        <nav>
-            <a href="#about">Обо мне</a>
-            <a href="#skills">Навыки</a>
-            <a href="#process">Процесс</a>
-            <a href="#portfolio">Портфолио</a>
-            <a href="#cases">Кейсы</a>
-            <a href="#reviews">Отзывы</a>
-            <a href="#contacts">Контакты</a>
+        <button type="button" class="burger" aria-label="open burger button">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+        <nav class="header__nav">
+          <button type="button" class="burger burger--close" aria-label="close burger button">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
+          <ul class="links">
+            <li class="links__item">
+              <a href="#about">Обо мне</a>
+            </li>
+            <li class="links__item">
+              <a href="#skills">Навыки</a>
+            </li>
+            <li class="links__item">
+              <a href="#process">Процесс</a>
+            </li>
+            <li class="links__item">
+              <a href="#portfolio">Портфолио</a>
+            </li>
+            <li class="links__item">
+              <a href="#cases">Кейсы</a>
+            </li>
+            <li class="links__item">
+              <a href="#reviews">Отзывы</a>
+            </li>
+            <li class="links__item">
+              <a href="#contacts">Контакты</a>
+            </li>
+          </ul>
         </nav>
-    </div>
-</header>
-
-<section class="hero">
-    <div class="container hero-flex">
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container hero-flex">
         <div class="hero-text">
-            <h1>Веб-дизайнер & Фронтенд-разработчик</h1>
-            <p>Я создаю премиальные сайты, которые поднимают доверие и улучшают конверсию. Специализируюсь на UX/UI, адаптивной верстке и redesign-проектах.</p>
-            <a href="#contacts" class="btn">Связаться со мной</a>
+          <h1>Веб-дизайнер & Фронтенд-разработчик</h1>
+          <p>
+            Я создаю премиальные сайты, которые поднимают доверие и улучшают конверсию.
+            Специализируюсь на UX/UI, адаптивной верстке и redesign-проектах.
+          </p>
+          <a href="#contacts" class="btn">Связаться со мной</a>
         </div>
-        <img src="img/avatar.jpg" class="avatar">
-    </div>
-</section>
-
-<section id="about" class="block">
-    <div class="container">
+        <img src="img/avatar.jpg" class="avatar" />
+      </div>
+    </section>
+    <section id="about" class="block">
+      <div class="container">
         <h2>Обо мне</h2>
         <p class="big-text">
-            Меня зовут Алексей Миронов. Уже 4 года я проектирую и создаю интерфейсы для компаний, экспертов и малого бизнеса.
-            Специализируюсь на современном премиальном дизайне, уделяю внимание деталям и удобству пользователей.
+          Меня зовут Алексей Миронов. Уже 4 года я проектирую и создаю интерфейсы для компаний,
+          экспертов и малого бизнеса. Специализируюсь на современном премиальном дизайне, уделяю
+          внимание деталям и удобству пользователей.
         </p>
         <p>
-            Моя цель — создавать сайты, которые не просто красиво выглядят, а помогают владельцам повышать продажи,
-            удерживать клиентов и формировать сильный бренд. Я делаю проекты полностью под ключ: дизайн, верстка,
-            адаптив, анимации, интерактивные элементы и базовая SEO-оптимизация.
+          Моя цель — создавать сайты, которые не просто красиво выглядят, а помогают владельцам
+          повышать продажи, удерживать клиентов и формировать сильный бренд. Я делаю проекты
+          полностью под ключ: дизайн, верстка, адаптив, анимации, интерактивные элементы и базовая
+          SEO-оптимизация.
         </p>
-    </div>
-</section>
-
-<section id="skills" class="block gray">
-    <div class="container">
+      </div>
+    </section>
+    <section id="skills" class="block gray">
+      <div class="container">
         <h2>Навыки</h2>
         <div class="skills">
-            <div class="skill">
-                <p>UX/UI Дизайн</p>
-                <div class="bar"><div style="width: 95%"></div></div>
-            </div>
-            <div class="skill">
-                <p>HTML/CSS</p>
-                <div class="bar"><div style="width: 90%"></div></div>
-            </div>
-            <div class="skill">
-                <p>JavaScript</p>
-                <div class="bar"><div style="width: 75%"></div></div>
-            </div>
-            <div class="skill">
-                <p>Адаптивная верстка</p>
-                <div class="bar"><div style="width: 92%"></div></div>
-            </div>
-            <div class="skill">
-                <p>Редизайн сайтов</p>
-                <div class="bar"><div style="width: 88%"></div></div>
-            </div>
+          <div class="skill">
+            <p>UX/UI Дизайн</p>
+            <div class="bar"><div style="width: 95%"></div></div>
+          </div>
+          <div class="skill">
+            <p>HTML/CSS</p>
+            <div class="bar"><div style="width: 90%"></div></div>
+          </div>
+          <div class="skill">
+            <p>JavaScript</p>
+            <div class="bar"><div style="width: 75%"></div></div>
+          </div>
+          <div class="skill">
+            <p>Адаптивная верстка</p>
+            <div class="bar"><div style="width: 92%"></div></div>
+          </div>
+          <div class="skill">
+            <p>Редизайн сайтов</p>
+            <div class="bar"><div style="width: 88%"></div></div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section id="process" class="block">
-    <div class="container">
+    <section id="process" class="block">
+      <div class="container">
         <h2>Как я работаю</h2>
         <div class="cards">
-            <div class="card">
-                <h3>1. Анализ</h3>
-                <p>Изучаю нишу, конкурентов и цели проекта.</p>
-            </div>
-            <div class="card">
-                <h3>2. Прототип</h3>
-                <p>Создаю структуру сайта и логику интерфейса.</p>
-            </div>
-            <div class="card">
-                <h3>3. Дизайн</h3>
-                <p>Разрабатываю красивый и удобный макет.</p>
-            </div>
-            <div class="card">
-                <h3>4. Верстка</h3>
-                <p>Собираю сайт, добавляю анимации и адаптив.</p>
-            </div>
+          <div class="card">
+            <h3>1. Анализ</h3>
+            <p>Изучаю нишу, конкурентов и цели проекта.</p>
+          </div>
+          <div class="card">
+            <h3>2. Прототип</h3>
+            <p>Создаю структуру сайта и логику интерфейса.</p>
+          </div>
+          <div class="card">
+            <h3>3. Дизайн</h3>
+            <p>Разрабатываю красивый и удобный макет.</p>
+          </div>
+          <div class="card">
+            <h3>4. Верстка</h3>
+            <p>Собираю сайт, добавляю анимации и адаптив.</p>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section id="portfolio" class="block gray">
-    <div class="container">
+    <section id="portfolio" class="block gray">
+      <div class="container">
         <h2>Портфолио</h2>
         <div class="portfolio">
-            <div class="port-item">
-                <img src="https://i.pinimg.com/736x/2c/db/58/2cdb5825696baf75a994fbcc744764ae.jpg">
-                <p>CoffeeWave — Лендинг кофейни</p>
-            </div>
-            <div class="port-item">
-                <img src="https://design.megagroup.ru/storage/772.design/images/site/2023/08/5233974/86253_9.jpg">
-                <p>UrbanWear — Магазин одежды</p>
-            </div>
-            <div class="port-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS5plYyo7ptQUXYJ6vULio8hoRrHnj_AJ9cw&amp;s">
-                <p>TechVision — Корпоративный сайт</p>
-            </div>
+          <div class="port-item">
+            <img src="https://i.pinimg.com/736x/2c/db/58/2cdb5825696baf75a994fbcc744764ae.jpg" />
+            <p>CoffeeWave — Лендинг кофейни</p>
+          </div>
+          <div class="port-item">
+            <img
+              src="https://design.megagroup.ru/storage/772.design/images/site/2023/08/5233974/86253_9.jpg"
+            />
+            <p>UrbanWear — Магазин одежды</p>
+          </div>
+          <div class="port-item">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS5plYyo7ptQUXYJ6vULio8hoRrHnj_AJ9cw&amp;s"
+            />
+            <p>TechVision — Корпоративный сайт</p>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section id="cases" class="block">
-    <div class="container">
+    <section id="cases" class="block">
+      <div class="container">
         <h2>Кейсы</h2>
 
         <div class="case">
-            <img src="https://welcome.mosreg.ru/uploads/%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BE%20booking/one%20two%20trip.jpg">
-            <div>
-                <h3>Redesign сервиса бронирования</h3>
-                <p>Полностью переработал UX, улучшил навигацию, провёл визуальный ребрендинг.  
-                    <b>Результат: рост заявок +42%.</b>
-                </p>
-            </div>
+          <img
+            src="https://welcome.mosreg.ru/uploads/%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BE%20booking/one%20two%20trip.jpg"
+          />
+          <div>
+            <h3>Redesign сервиса бронирования</h3>
+            <p>
+              Полностью переработал UX, улучшил навигацию, провёл визуальный ребрендинг.
+              <b>Результат: рост заявок +42%.</b>
+            </p>
+          </div>
         </div>
 
         <div class="case">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo0NTrIuKx3eUU6zbjjcrDHaYKjQ7_YEYaww&amp;s">
-            <div>
-                <h3>Личный сайт фотографа</h3>
-                <p>Создал минималистичный премиальный дизайн с акцентом на галерею.  
-                    <b>Результат: рост клиентов +27%.</b>
-                </p>
-            </div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo0NTrIuKx3eUU6zbjjcrDHaYKjQ7_YEYaww&amp;s"
+          />
+          <div>
+            <h3>Личный сайт фотографа</h3>
+            <p>
+              Создал минималистичный премиальный дизайн с акцентом на галерею.
+              <b>Результат: рост клиентов +27%.</b>
+            </p>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section id="reviews" class="block gray">
-    <div class="container">
+    <section id="reviews" class="block gray">
+      <div class="container">
         <h2>Отзывы</h2>
         <div class="reviews">
-            <div class="review">
-                <p>«Отличный специалист! Сделал всё быстро, качественно и красиво. Сайт приносит клиентов.»</p>
-                <b>— Анна Ларина</b>
-            </div>
-            <div class="review">
-                <p>«Дал много советов, сам предложил идеи. Результат лучше, чем ожидал.»</p>
-                <b>— Дмитрий</b>
-            </div>
+          <div class="review">
+            <p>
+              «Отличный специалист! Сделал всё быстро, качественно и красиво. Сайт приносит
+              клиентов.»
+            </p>
+            <b>— Анна Ларина</b>
+          </div>
+          <div class="review">
+            <p>«Дал много советов, сам предложил идеи. Результат лучше, чем ожидал.»</p>
+            <b>— Дмитрий</b>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section id="contacts" class="block">
-    <div class="container">
+    <section id="contacts" class="block">
+      <div class="container">
         <h2>Контакты</h2>
         <p>Email: <b>mironov.web@design.ru</b></p>
         <p>Telegram: <b>@mironov_work</b></p>
         <p>Телефон: <b>+7 999 123-45-67</b></p>
-    </div>
-</section>
+      </div>
+    </section>
 
-<footer>
-    <div class="container">
-        © 2024 — Алексей Миронов
-    </div>
-</footer>
+    <footer>
+      <div class="container">©️ 2024 — Алексей Миронов</div>
+    </footer>
 
-<script>
-    const blocks = document.querySelectorAll('.block');
-    const options = { threshold: 0.2 };
+    <script>
+      const blocks = document.querySelectorAll('.block');
+      const options = { threshold: 0.2 };
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-            }
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+          }
         });
-    }, options);
+      }, options);
 
-    blocks.forEach(block => observer.observe(block));
-</script>
+      blocks.forEach((block) => observer.observe(block));
 
-</body>
+      document.querySelectorAll('.burger').forEach((burger) => {
+        burger.addEventListener('click', () => {
+          document.querySelector('.header_nav').classList.toggle('header_nav--active');
+        });
+      });
+    </script>
+  </body>
 </html>
 
 
